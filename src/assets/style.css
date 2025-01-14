@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e2e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: black;
+}
+  
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s;
+    background-color: white;
+    color: black;
+}
+
+input:focus {
+    border-color: #1b5e20;
+}
+  
+button:hover {
+    background-color: #b81ea7;
+}
+  
+button[type="button"]:hover {
+    background-color: black;
+    color: white;
+}
+  
+@media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    input {
+      padding: 10px;
+      font-size: 14px;
+    }
+}
+  
+
+.l2-form {
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.form__title2 {
+    font-size: 50px;
+    color: #9937d1;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.container2 {
+    margin-top: 10px;
+    width: 1250px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    background-color: #ab8dbd;
+}
+
+.header {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 12px;
+}
+
+.header span {
+    font-weight: 900;
+    font-size: 20px;
+    word-break: break-all;
+}
+
+#btn-add {
+    font-size: 20px;
+    font-weight: 500;
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #9937d1;
+}
+
+#btn-add:hover {
+    background-color: #b81ea7;
+}
+
+.divTable {
+    padding: 10px;
+    width: auto;
+    height: inherit;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+    word-break: break-all;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #9937d1;
+    color: white;
+}
+
+tr {
+    border-bottom: 1px solid rgb(238, 235, 235)!important;
+}
+
+tbody tr td {
+    padding: 6px;
+    max-width: 50px;
+}
+
+thead tr th {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+tbody tr {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+thead tr th.acao {
+    width: 80px !important;
+    text-align: center;
+}
+
+tbody tr td.acao {
+    text-align: center;
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal label {
+    font-size: 14px;
+    width: 100%;
+}
+
+.modal input {
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: black;
+}
+
+.modal button {
+    width: 100%;
+    margin: 10px auto;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #9937d1;
+    color: white;
+}
+
+.modal button:hover {
+    background-color: #b81ea7;
+}
+
+td button {
+    border: none;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    background-color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    align-items: center;
+}
+
+td button i {
+    font-size: 25px;
+    color: inherit;
+}
+
+.acao button {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.contacto {
+    text-align: center;
+}
+.what-logo {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.btn-pdf {
+    background-color: #9937d1;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn-pdf:hover {
+    background-color: #b81ea7;
+}
